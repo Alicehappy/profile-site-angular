@@ -2,4 +2,19 @@
     <mat-card-title class="profile-card__title">
         {{ profile.name }}
     </mat-card-title>
+    <mat-card-subtitle class="profile-card__subtitle">
+        {{ profile.role }}
+    </mat-card-subtitle>
+
+    <mat-card-content class="profile-card__content">
+        <p class="profile-card__location">📍 {{ profile.location }}</p>
+
+        <div class="profile-card__skills">
+            @for (skill of profile.skills; track skill) {
+                <mat-chip>{{ skill }}</mat-chip>
+            }
+        </div>
+
+        <button mat-raised-button color="primary" (click)="viewDetails.emit()">View Details</button>
+    </mat-card-content>
 </mat-card>

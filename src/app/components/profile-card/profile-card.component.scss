@@ -1,0 +1,19 @@
+.profile-card {
+    &__title {
+        font-size: 1.5rem;
+    }
+
+    &__subtitle {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    &__location {
+        color: gray;
+        font-style: italic;
+    }
+
+    &__skills {
+        margin: 1rem 0;
+    }
+}
